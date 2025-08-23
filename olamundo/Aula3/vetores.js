@@ -1,20 +1,13 @@
-const marcas = ["BMW", "AUDI", "FERRARI"];
-console.log(marcas[2]); 
-console.log(marcas.at(1));
+const fila = ["Enzo", "Valentina", "LucaS"];
 
-marcas.push("LAMBORGHINI");
+// adicionando clientes na fila
+fila.push("Ana", "Pedro");
 
-for (let i = 0; i < marcas.length; i++){
-    console.log(`Marca: ${marcas[i]} famosa`);
-}
+// remove o primeiro cliente da fila e armazena quem foi atendido
+const atendido = fila.shift();
 
-console.log(" ");// pula uma linha
+fila.push("Mateus");
 
-// Remove a primeira posição do vetor
-marcas.shift();
-//Remove a última posição
-marcas.pop();
+console.log(fila);
+console.log(`O primeiro a ser atendido é ${atendido}`);
 
-for(item of marcas){
-    console.log("Restou: " + item);
-}
