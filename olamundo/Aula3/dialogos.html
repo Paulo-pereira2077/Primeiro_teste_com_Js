@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diálogos</title>
+
+    <script>
+        function dialogos(){
+            let nome = prompt("Digite seu nome: ");
+            alert("Olá " + nome);
+
+            let resposta = confirm("Deseja continuar?");
+
+            if(resposta){
+                alert("Bem-vindo!");
+            }
+            else{
+                alert("Até logo!")
+            }
+        }
+    </script>
+</head>
+<body>
+    <input type="button" value="Clique aqui!" onclick="dialogos()"/>
+</body>
+</html>
