@@ -7,20 +7,21 @@ class Carro {
         this.cor = cor;
     }
 
+    exibirInfo(){
+        console.log(`Modelo: ${this.modelo}, Cor: ${this.cor}`)
+    }
 }
 
 // primeiro objeto
 const meuCarro = new Carro("Branco", "Corolla");
 
-console.log("Modelo 1:")
-console.log(meuCarro.modelo);
-console.log(meuCarro.cor);
+console.log("Modelo 1:");
+meuCarro.exibirInfo();
 
 console.log("");
 
 // segundo objeto
 const carroVizinho = new Carro("Preto", "Civic");
 
-console.log("Modelo 2:")
-console.log(carroVizinho.modelo);
-console.log(carroVizinho.cor);
+console.log("Modelo 2:");
+carroVizinho.exibirInfo();
