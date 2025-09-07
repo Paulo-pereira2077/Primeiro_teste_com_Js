@@ -9,6 +9,7 @@ class Animal{
         this.nome = nome;
         this.peso = 37;
         this.especie = especie;
+        this.tempoCaca = 30;
     }
 
     exibirEspecie(especie: String){
@@ -20,12 +21,11 @@ class Animal{
     }
 
     sair(){
-        console.log(`O ${this.nome} retornou à superfície!`);
+        console.log(`O ${this.nome} retornou à superfície com os peixes!`);
     }
     
     // saiu para caçar peixes
-    cacar(){
-        this.tempoCaca = 30;
+    cacar(){        
         console.log(`O ${this.nome} saiu para caçar peixes por ${this.tempoCaca}min.`)
     }
 
